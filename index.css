@@ -7,20 +7,30 @@ body {
     color: rgb(255, 255, 255);
 }
 
+.navbar {
+    margin-bottom: 2vw;
+}
+
+.navbar-nav {
+    position: absolute;
+    right: 1rem;
+}
+
 .section-1 {
-    background-image: url('./images/backgroundcover.jpg');
-    object-fit: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url('./images/backgroundcover.jpg');
+    /* object-fit: scale-down; */
     background-size: cover;
     width: 100%;
     height: 50vw;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
+    /* overflow: hidden; */
 }
 
 .donate {
     text-align: right;
-    margin: 1rem;
+    margin: 0.5rem 1rem;
     display: flex;
     justify-content: flex-end;
 }
@@ -40,14 +50,84 @@ body {
 img {
     width: 2%;
     position: relative;
-    margin: 0 1rem;
+    margin: 0 0.5rem 0 1rem;
 }
 
 .navbar-brand {
-    text-transform: uppercase;
     font-family: 'Saira Condensed', sans-serif;
+    font-size: 3vw !important;
 }
 
-.navbar-light .navbar-brand {
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-toggler {
     color: white !important;
+}
+
+.white {
+    color: white !important;
+}
+
+.welcome-text {
+    width: 70%;
+}
+
+.margin-auto {
+    margin: 0 auto;
+}
+
+.upper-case {
+    text-transform: uppercase;
+}
+
+.col-8,
+.col-6 {
+    flex: 0 !important;
+}
+
+.we-are {
+    margin-top: 1vw;
+    font-size: 4vw;
+}
+
+.vol_but {
+    margin: 5% auto;
+    flex: auto;
+    justify-items: center;
+    font-size: 1vw;
+}
+
+.myButton {
+    background-color: #1F6E3B;
+    border-radius: 28px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 16px 76px;
+    text-decoration: none;
+}
+
+.myButton:hover {
+    background-color: #4e8731;
+    color: white;
+    text-decoration: none;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+.center-horz {
+    position: absolute;
+    left: 50%;
+    opacity: 0.8;
+    transform: translate(-50%, -50%);
+}
+
+.col-8 p {
+    font-size: 1.vw;
 }
