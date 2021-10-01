@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: rgb(255, 255, 255);
+}
+
+.section-1 {
+    background-image: url('./images/backgroundcover.jpg');
+    object-fit: cover;
+    background-size: cover;
+    width: 100%;
+    height: 50vw;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.donate {
+    text-align: right;
+    margin: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.dnt-btn {
+    background-color: #1F6E3B;
+    border-radius: 2rem;
+    width: 10%;
+    float: right;
+    text-align: center;
+    font-size: 1.5vw;
+    padding: 1vw;
+    text-transform: uppercase;
+    color: white;
+}
+
+img {
+    width: 2%;
+    position: relative;
+    margin: 0 1rem;
+}
+
+.navbar-brand {
+    text-transform: uppercase;
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+.navbar-light .navbar-brand {
+    color: white !important;
+}
